@@ -28,7 +28,7 @@ Doing practice exams is **essential**.  All practice exams have typos, errors an
 * [tutorialsdojo cheatsheets](https://tutorialsdojo.com/aws-cheat-sheets/)
 * [AWS developer guides and API references](https://docs.aws.amazon.com/)
 * [AWS whitepapers](https://aws.amazon.com/whitepapers/)
-* google "(service name) faqs" for unfamiliar services, for example, "global accelerator faqs"
+* google "(service name) faqs" for unfamiliar services, for example, ["global accelerator faqs"](https://www.google.com/search?q=global+accelerator+faqs)
 
 Focus on courses and practice exams first.  Read FAQ's to get overall pictures of specific services quickly.  Read developer guides and whitepapers to go deep into a specific topic. Explore other resources if you have time.
 
