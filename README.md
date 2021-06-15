@@ -9,7 +9,7 @@
 * [Whizlabs](https://www.whizlabs.com/aws-solutions-architect-professional/) ($19.95, whole site sub $99/year)
 * [Zeal Vora](https://www.udemy.com/course/aws-certified-solutions-architect-professional/) ($34.99)
 
-I only have experience with last 3 courses. For me both Maarek and Whizlabs courses are good, but lack depth.  Vora's course are detailed but maybe a little tedious, it has a lot of hands-ons that fill the gap left by other courses.  Would I recommend them? Yes, I do, they are well worth the money, which isn't much compared with the exam registration fee.
+I only have experience with last 3 courses and the free readiness course. For me both Maarek and Whizlabs courses are good, but lack depth.  Vora's course are detailed but maybe a little tedious, it has a lot of hands-ons that fill the gap left by other courses.  Would I recommend them? Yes, I do, they are well worth the money, which isn't much compared with the exam registration fee.
 
 ## Practice Exams ##
 * [Bonso/TutorialDojo 4 tests](https://www.udemy.com/course/aws-solutions-architect-professional-practice-exams-amazon/) (varies, ~$15, wait for sales)
