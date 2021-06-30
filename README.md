@@ -38,4 +38,4 @@ Focus on courses and practice exams first.  Read FAQ's to get overall pictures o
 3. stick to the plan
 4. (optional) do lots of hands-ons during study 
 
-My notes.
+[My notes](my_notes.md).
