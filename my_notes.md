@@ -1,11 +1,11 @@
-= SAP-C01 Study Notes =
+# SAP-C01 Study Notes
 
 🛑 Please note **my** notes are most likely useless for **you**.
 
-=== S3 ===
+## S3
 For Glacier, through aws console, you can only create and delete vaults, all other operations require CLI or code.
 
-=== EC2 ===
+## EC2
 EC2 placment groups:
 
 * Cluster – packs instances close together inside an Availability Zone. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of HPC applications.
@@ -18,7 +18,7 @@ Increasing EBS by 1T add 3000 iops.
 
 One can use session manager(on system manager, but from ec2 console) to rdp/console to ec2 without opening ec2 port (rdp or ssh).
 
-=== SQS ===
+## SQS
 
 sqs visibility timeotu, delay queue, message timer.
 
@@ -26,23 +26,23 @@ Message timer can be used to delay individiual message, 15min max.
 
 Deley Queue is for whole queue, also 15min. max.
 
-=== Auto Scaling ===
+## Auto Scaling
 
 These services have auto scaling: EC2, ECS, DynamoDB, Aurora (replicas).
 
-=== Elastic Beanstalk ===
+## Elastic Beanstalk
 
 You can rebuild terminated environments with 42 days.
 
 EB environment tiers: web server vs worker
 
-=== SnowXyz ===
+## SnowXyz
 
 * Snowmobile >10PB <100PB
 * snowball <10PB
 * snowball edge: 80TB, does encryption.
 
-=== VPC ===
+## VPC
 
 VPC peering will route to more specific route first.
 
@@ -72,7 +72,7 @@ Bastion host allow ssh/rdp access from internet, it act as a jump server.
 
 promiscuous mode is for packet sniffing.  AWS networking doesn't do promiscous mode.
 
-=== CloudFront ===
+## CloudFront
 
 CloudFront can be used to front on-premise site (custom origin).
 
@@ -82,11 +82,11 @@ CF can geo-restrict.
 
 Cloudfront can not do user-agent based routing, need lambda@edge for this.
 
-=== DirectConnect ===
+## DirectConnect
 
 DirectConnect can connect to private subnet in VPC via virtual private gateway/virtual interface.
 
-=== Redshift ===
+## Redshift
 
 Redshift has not read replica.  It has auto backup to S3.
 
@@ -96,13 +96,13 @@ Redshift **shift** away from Oracle(red).  It's mostly for data warehousing.
 
 Redshift Spectrum and query on S3 directly.
 
-=== Lambda ===
+## Lambda
 
 concurrent execution limit is 1000 and can be increased with request.
 
 If a job takes more than 15min, it can not be run on Lambda.
 
-=== SQS ===
+## SQS
 
 FIFO can do 300 t/s, batch mode can do 3000 t/s.
 
@@ -110,15 +110,15 @@ FIFO high throughput can do 3000, batch mode 30000.
 
 If there's no order requirement, should not consider FIFO, (couldn't be distractor)
 
-=== DynamoDB ===
+## DynamoDB
 
 The max item size in DynamoDB is 400KB.
 
 DAX is in-memory cache for DynamoDB.
 
-=== RDS ===
+## RDS
 
-=== Kinesis ===
+## Kinesis
 
 Kinesis data streams store data for up to 7 days. so we can run 2nd application up to 7 day after teh first appliation
 
@@ -128,13 +128,13 @@ Kinesis data stream retention min/default:24 hours max: 365days (used to be 7 da
 
 KDS has enhanced fan-out, it supports HTTP/2.
 
-=== API Gateway ===
+## API Gateway
 
 29 s timeout
 
 10MB max payload
 
-=== Migration ===
+## Migration
 
 DMS supports DB2, LM also support DB2.
 
@@ -144,13 +144,13 @@ SCT can copy data too (using SCT replication agent and SCT data extraction agent
 
 Storage gateway: cached volume 1024T max, stored volume: 512T max
 
-=== More to reads ===
+## More to reads
 
 * faq:AWS Backup
 * faq:AWS CloudEndure
 * blog: Implementing Canary Deployments of AWS Lambda Functions with Alias Traffic Shifting
 
-=== Others ===
+## Others
 
 Global Accelerator can be used for blue/green in place of route 53 if DNS caching is a concern.
 
